@@ -5,11 +5,11 @@ import icons from '../../helpers/icons'
 
 import FacebookSelectorEmoji from './FacebookSelectorEmoji'
 
-export const FacebookSelector = ({ iconSize, reactions, variant, onSelect }) => {
+export const FacebookSelector = ({ iconSize, reactions, variant, onSelect, className }) => {
   const styles = reactCSS({
     'default': {
       selector: {
-        backgroundColor: '#fff',
+        backgroundColor: 'transparent',
         borderRadius: '50px',
         padding: '2px',
         boxShadow: '0 0 0 1px rgba(0, 0, 0, .05), 0 1px 2px rgba(0, 0, 0, .15)',
@@ -42,6 +42,7 @@ FacebookSelector.defaultProps = {
   reactions: ['like', 'love', 'haha', 'wow', 'sad', 'angry'],
   iconSize: 38,
   variant: 'facebook',
+  className: '',
 }
 
 export default FacebookSelector
