@@ -55,7 +55,7 @@ export const FacebookSelectorEmoji = ({ icon, label, onSelect, hover }) => {
   };
 
   return (
-    <div className={`reaction-icon-${label}-wrapper`} style={styles.wrap}>
+    <div key={label} className={`reaction-icon-${label}-wrapper`} style={styles.wrap}>
       <div className={`reaction-icon-label-${label}`} style={styles.label}>
         {label}
       </div>
